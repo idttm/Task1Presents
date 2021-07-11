@@ -102,8 +102,8 @@ class Model {
                 break
             }
         }
-        let stringValue = String(sum)
-        return stringValue
+        let stringSumValue = String(sum)
+        return stringSumValue
     }
     
     func limitCheck(label: UILabel, editingRow: PrizeList, completion: @escaping() -> Void) {
