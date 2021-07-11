@@ -93,7 +93,6 @@ class Model {
                 sum = countPrice() + difference
                 if sum > 100 {
                     countSelectedPrice = arraySelectedPrice().count - 1
-                    print(countSelectedPrice)
                 } else {
                     return String(sum)
                 }
