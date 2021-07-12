@@ -7,44 +7,55 @@
 
 import UIKit
 
-class NewPresentViewController: UIViewController {
+protocol NewPrizeControllerDelegate: AnyObject {
+    func didCreateNewPrize()
+}
+
+class NewPrizeViewController: UIViewController {
     
-    var model = Model()
+    weak var delegate: NewPrizeControllerDelegate?
+    var viewModel = NewPrizeModel()
     
-    @IBOutlet weak var namePresentLabel: UILabel!
+    @IBOutlet weak var presentTitleLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
-    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var priceTextField: UITextField!
+    @IBOutlet weak var saveButtonOutlet: UIBarButtonItem!
     
-    @IBOutlet weak var sameButtonOutlet: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         updateSaveButtonState()
-        model.items = model.realm.objects(PrizeList.self)
     }
-
-    @IBAction func buttonAciotn(_ sender: UIBarButtonItem) {
-        
-        guard let priceText = priceTextField.text else {return}
-        guard let nameText = nameTextField.text else {return}
-        guard let priceTextInt = Int(priceText) else {return}
-        if priceTextInt >= 100 || priceTextInt <= 0 {
-            self.showAlert(with: "Ошибка", and: MyError.highPrice.rawValue)
-            priceTextField.text = ""
-        } else {
-            model.addNewPresent(name: nameText, price: priceText)
-            self.navigationController?.popViewController(animated: false)
+    
+    @IBAction func save(_ sender: UIBarButtonItem) {
+        guard let priceText = priceTextField.text,
+              let nameText = titleTextField.text
+        else { return }
+        if let priceInt = Int(priceText) {
+            viewModel.addNewPresent(name: nameText, priceInt: priceInt) { error in
+                if error != nil {
+                    self.showAlert(with: "Ошибка", and: PriceCalculationsError.highPrice.rawValue )
+                    self.priceTextField.text = ""
+                    self.updateSaveButtonState()
+                } else {
+                    self.delegate?.didCreateNewPrize()
+                    self.navigationController?.popViewController(animated: false)
+                }
+            }
         }
+        else {
+            self.showAlert(with: "Ошибка", and: PriceCalculationsError.priceNotInt.rawValue)
+        }
+        
     }
     
     private func updateSaveButtonState() {
-        let name = nameTextField.text ?? ""
+        let name = titleTextField.text ?? ""
         let price = priceTextField.text ?? ""
-        sameButtonOutlet.isEnabled = !name.isEmpty && !price.isEmpty
+        saveButtonOutlet.isEnabled = !name.isEmpty && !price.isEmpty
     }
     
     @IBAction func textChanged(_ sender: UITextField) {
         updateSaveButtonState()
     }
-    
 }

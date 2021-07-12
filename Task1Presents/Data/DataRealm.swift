@@ -8,13 +8,13 @@
 import Foundation
 import RealmSwift
 
-class PrizeList: Object {
-    @objc dynamic var namePrize = ""
-    @objc dynamic var prise = 0
+class Prize: Object {
+    @objc dynamic var title = ""
+    @objc dynamic var price = 0
     @objc dynamic var selected = false
-    @objc dynamic var personID = UUID().uuidString
+    @objc dynamic var prizeID = UUID().uuidString
     
     override static func primaryKey() -> String? {
-       return "personID"
-     }
+        return "prizeID"
+    }
 }

@@ -9,15 +9,16 @@
 /* Begin PBXBuildFile section */
 		3E1CCD932695934600F0F8F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CCD922695934600F0F8F0 /* AppDelegate.swift */; };
 		3E1CCD952695934600F0F8F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CCD942695934600F0F8F0 /* SceneDelegate.swift */; };
-		3E1CCD972695934600F0F8F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CCD962695934600F0F8F0 /* ViewController.swift */; };
+		3E1CCD972695934600F0F8F0 /* PrizeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CCD962695934600F0F8F0 /* PrizeListViewController.swift */; };
 		3E1CCD9A2695934600F0F8F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E1CCD982695934600F0F8F0 /* Main.storyboard */; };
 		3E1CCD9C2695934A00F0F8F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E1CCD9B2695934A00F0F8F0 /* Assets.xcassets */; };
 		3E1CCD9F2695934A00F0F8F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E1CCD9D2695934A00F0F8F0 /* LaunchScreen.storyboard */; };
 		3E1CCDA726959C2500F0F8F0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CCDA626959C2500F0F8F0 /* TableViewCell.swift */; };
 		3E1CCDA92695DDD700F0F8F0 /* NewPresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CCDA82695DDD700F0F8F0 /* NewPresentViewController.swift */; };
-		3E4B87FF269AD5EB000083ED /* MyAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4B87FE269AD5EB000083ED /* MyAlertController.swift */; };
+		3E4B87FF269AD5EB000083ED /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4B87FE269AD5EB000083ED /* UIViewController+Extensions.swift */; };
+		3E6232A3269C9C4400D959EE /* NewPrizeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6232A2269C9C4400D959EE /* NewPrizeModel.swift */; };
 		3EA5940D2697913100967622 /* DataRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5940C2697913100967622 /* DataRealm.swift */; };
-		3EA5940F2697921B00967622 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5940E2697921B00967622 /* Model.swift */; };
+		3EA5940F2697921B00967622 /* PrizeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5940E2697921B00967622 /* PrizeListViewModel.swift */; };
 		A66CF26D027BD2DCCD9C89AF /* Pods_Task1Presents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B86657DA485BFC1F5EC5D4F2 /* Pods_Task1Presents.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,16 +27,17 @@
 		3E1CCD8F2695934600F0F8F0 /* Task1Presents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task1Presents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E1CCD922695934600F0F8F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E1CCD942695934600F0F8F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3E1CCD962695934600F0F8F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3E1CCD962695934600F0F8F0 /* PrizeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizeListViewController.swift; sourceTree = "<group>"; };
 		3E1CCD992695934600F0F8F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E1CCD9B2695934A00F0F8F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E1CCD9E2695934A00F0F8F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E1CCDA02695934A00F0F8F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E1CCDA626959C2500F0F8F0 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3E1CCDA82695DDD700F0F8F0 /* NewPresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPresentViewController.swift; sourceTree = "<group>"; };
-		3E4B87FE269AD5EB000083ED /* MyAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlertController.swift; sourceTree = "<group>"; };
+		3E4B87FE269AD5EB000083ED /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		3E6232A2269C9C4400D959EE /* NewPrizeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPrizeModel.swift; sourceTree = "<group>"; };
 		3EA5940C2697913100967622 /* DataRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRealm.swift; sourceTree = "<group>"; };
-		3EA5940E2697921B00967622 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3EA5940E2697921B00967622 /* PrizeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizeListViewModel.swift; sourceTree = "<group>"; };
 		B86657DA485BFC1F5EC5D4F2 /* Pods_Task1Presents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Task1Presents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F6A4B8679C9F9FB21EFEEC /* Pods-Task1Presents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task1Presents.debug.xcconfig"; path = "Target Support Files/Pods-Task1Presents/Pods-Task1Presents.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,10 +99,10 @@
 		3E62329C269C579900D959EE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3E1CCD962695934600F0F8F0 /* ViewController.swift */,
-				3E1CCDA626959C2500F0F8F0 /* TableViewCell.swift */,
+				3E1CCD962695934600F0F8F0 /* PrizeListViewController.swift */,
 				3E1CCDA82695DDD700F0F8F0 /* NewPresentViewController.swift */,
-				3E4B87FE269AD5EB000083ED /* MyAlertController.swift */,
+				3E4B87FE269AD5EB000083ED /* UIViewController+Extensions.swift */,
+				3E62329F269C58AB00D959EE /* TableViewCell */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -108,7 +110,8 @@
 		3E62329D269C57BD00D959EE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3EA5940E2697921B00967622 /* Model.swift */,
+				3E6232A2269C9C4400D959EE /* NewPrizeModel.swift */,
+				3EA5940E2697921B00967622 /* PrizeListViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,6 +122,14 @@
 				3EA5940C2697913100967622 /* DataRealm.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		3E62329F269C58AB00D959EE /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3E1CCDA626959C2500F0F8F0 /* TableViewCell.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		5FB737218D2BF8DC666D6955 /* Pods */ = {
@@ -244,11 +255,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EA5940F2697921B00967622 /* Model.swift in Sources */,
-				3E1CCD972695934600F0F8F0 /* ViewController.swift in Sources */,
+				3EA5940F2697921B00967622 /* PrizeListViewModel.swift in Sources */,
+				3E1CCD972695934600F0F8F0 /* PrizeListViewController.swift in Sources */,
 				3EA5940D2697913100967622 /* DataRealm.swift in Sources */,
+				3E6232A3269C9C4400D959EE /* NewPrizeModel.swift in Sources */,
 				3E1CCDA92695DDD700F0F8F0 /* NewPresentViewController.swift in Sources */,
-				3E4B87FF269AD5EB000083ED /* MyAlertController.swift in Sources */,
+				3E4B87FF269AD5EB000083ED /* UIViewController+Extensions.swift in Sources */,
 				3E1CCDA726959C2500F0F8F0 /* TableViewCell.swift in Sources */,
 				3E1CCD932695934600F0F8F0 /* AppDelegate.swift in Sources */,
 				3E1CCD952695934600F0F8F0 /* SceneDelegate.swift in Sources */,
