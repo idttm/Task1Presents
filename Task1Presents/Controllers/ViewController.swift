@@ -41,8 +41,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as!
-            TableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TableViewCell else {fatalError()}
         let item = model.items[indexPath.row]
         cell.namePresentLabel.text = item.namePrize
         cell.pricePresentLabel.text = "Цена \(String(item.prise))"

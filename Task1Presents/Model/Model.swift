@@ -11,8 +11,9 @@ import RealmSwift
 enum MyError: String {
     
     case highPrice = "Слишком большая цена, меньшая или равная 0"
-    
-}
+    case limitExcess = "Лимит привышен будет удалены призы на недастоющую сумму"
+        
+        }
 
 class Model {
     

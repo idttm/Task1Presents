@@ -26,13 +26,13 @@ class NewPresentViewController: UIViewController {
     @IBAction func buttonAciotn(_ sender: UIBarButtonItem) {
         
         guard let priceText = priceTextField.text else {return}
-        guard let nemaText = nameTextField.text else {return}
+        guard let nameText = nameTextField.text else {return}
         guard let priceTextInt = Int(priceText) else {return}
         if priceTextInt >= 100 || priceTextInt <= 0 {
             self.showAlert(with: "Ошибка", and: MyError.highPrice.rawValue)
             priceTextField.text = ""
         } else {
-            model.addNewPresent(name: nemaText, price: priceText)
+            model.addNewPresent(name: nameText, price: priceText)
             self.navigationController?.popViewController(animated: false)
         }
     }

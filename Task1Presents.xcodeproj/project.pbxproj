@@ -83,18 +83,42 @@
 			children = (
 				3E1CCD922695934600F0F8F0 /* AppDelegate.swift */,
 				3E1CCD942695934600F0F8F0 /* SceneDelegate.swift */,
-				3E1CCD962695934600F0F8F0 /* ViewController.swift */,
-				3E1CCDA626959C2500F0F8F0 /* TableViewCell.swift */,
-				3E1CCDA82695DDD700F0F8F0 /* NewPresentViewController.swift */,
-				3E4B87FE269AD5EB000083ED /* MyAlertController.swift */,
-				3EA5940E2697921B00967622 /* Model.swift */,
-				3EA5940C2697913100967622 /* DataRealm.swift */,
+				3E62329C269C579900D959EE /* Controllers */,
+				3E62329D269C57BD00D959EE /* Model */,
+				3E62329E269C57C800D959EE /* Data */,
 				3E1CCD982695934600F0F8F0 /* Main.storyboard */,
 				3E1CCD9B2695934A00F0F8F0 /* Assets.xcassets */,
 				3E1CCD9D2695934A00F0F8F0 /* LaunchScreen.storyboard */,
 				3E1CCDA02695934A00F0F8F0 /* Info.plist */,
 			);
 			path = Task1Presents;
+			sourceTree = "<group>";
+		};
+		3E62329C269C579900D959EE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3E1CCD962695934600F0F8F0 /* ViewController.swift */,
+				3E1CCDA626959C2500F0F8F0 /* TableViewCell.swift */,
+				3E1CCDA82695DDD700F0F8F0 /* NewPresentViewController.swift */,
+				3E4B87FE269AD5EB000083ED /* MyAlertController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3E62329D269C57BD00D959EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3EA5940E2697921B00967622 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E62329E269C57C800D959EE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3EA5940C2697913100967622 /* DataRealm.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		5FB737218D2BF8DC666D6955 /* Pods */ = {
